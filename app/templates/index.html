@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="static/images/python.png" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Capturar</title>
+  </head>
+  <body>
+    <main>
+      <form action="/upload_image" method="post" enctype="multipart/form-data">
+        <input type="text" name="token" hidden value="mlorc123">
+        <input type="file" name="photo" accept="image/*" capture="user" hidden id="take-photo-input">
+        <div id="initial-screen">
+          <button type="button" id="initial-btn">
+            <span class="material-symbols-outlined">photo_camera</span>
+            Tire uma Foto
+          </button>
+        </div>
+        <div id="second-screen">
+          <div id="blackboard">
+            <div id="loader"></div>
+          </div>
+          <div id="board-area">
+            <canvas id="board"></canvas>
+          </div>
+          <div class="btn-area">
+            <button id="capture-btn" type="button">
+              <div class="btn-content">
+                <span class="material-symbols-outlined">photo_camera</span>
+                Capturar
+              </div>
+            </button>
+            <button id="send-btn" type="submit">
+              <div class="btn-content">
+                <span class="material-symbols-outlined">send</span>
+                Enviar
+              </div>
+            </button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="static/js/script.js"></script>
+  </body>
+</html>

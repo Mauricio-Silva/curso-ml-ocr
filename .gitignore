@@ -1,0 +1,16 @@
+__pycache__
+.venv
+.vscode
+
+backend
+data
+docs
+tests
+tests/*
+
+Makefile
+cspell.json
+requirements.md
+
+model
+!app/static/model
