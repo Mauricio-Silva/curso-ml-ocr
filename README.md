@@ -67,3 +67,8 @@ $ source .venv/bin/activate
 # Execute a aplicação
 (.venv) $ python3 app/main.py
 ```
+## App
+
+Normalmente a aplicação irá abrir um QrCode que você poderá escanear para acessar diretamente o link da aplicação. Você pode fechar a janela do QrCode após escaneá-lo.
+Você também poderá acessar digitando o link no navegador. <br>
+Existem dois links, um **local**: http://127.0.0.1:9700 e um **aberto** logo abaixo, você pode acessar a aplicação localmente no navegador do seu computador/notebook com o link **local**, mas para acessar a aplicação remotamente em outro dispositivo, digite o link **aberto** no navegador do seu dispositivo remoto.
