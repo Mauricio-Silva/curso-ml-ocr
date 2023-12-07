@@ -7,6 +7,9 @@ Tecnologia em Análise e Desenvolvimento de Sistemas - TADS<br/>
 ## Tesseract
 
 ```bash
+# Verifique se você tem o Tesseract instalado:
+$ tesseract --version
+
 # Instale o Tesseract para para ler e extrair os textos das imagens
 $ sudo apt-get install tesseract-ocr
 
